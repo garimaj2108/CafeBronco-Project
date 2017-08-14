@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAC0A541F40DB190093BBBD /* Mission_Bakery_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A531F40DB190093BBBD /* Mission_Bakery_ViewController.swift */; };
+		5AAC0A561F4111160093BBBD /* Salad_Bar_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */; };
+		5AAC0A581F4111320093BBBD /* La_Parilla_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */; };
+		5AAC0A5A1F41176B0093BBBD /* Order_summary_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */; };
 		6F2EBFEF1EDAB2B9005BD4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */; };
 		6F2EBFF11EDAB2B9005BD4D1 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */; };
 		6F2EBFF31EDAB2B9005BD4D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AAC0A531F40DB190093BBBD /* Mission_Bakery_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mission_Bakery_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salad_Bar_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = La_Parilla_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order_summary_ViewController.swift; sourceTree = "<group>"; };
 		6F2EBFEB1EDAB2B9005BD4D1 /* Capstone_CafeBronco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone_CafeBronco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
@@ -105,10 +113,14 @@
 				6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */,
 				6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */,
 				6F2EBFF41EDAB2B9005BD4D1 /* Main.storyboard */,
+				5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */,
+				5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */,
+				5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */,
 				6F4E4D571EDCC8A70097ECD5 /* MenuItemsTableViewController.swift */,
 				6F2EBFF71EDAB2B9005BD4D1 /* Assets.xcassets */,
 				6F2EBFF91EDAB2B9005BD4D1 /* LaunchScreen.storyboard */,
 				6F2EBFFC1EDAB2B9005BD4D1 /* Info.plist */,
+				5AAC0A531F40DB190093BBBD /* Mission_Bakery_ViewController.swift */,
 			);
 			path = Capstone_CafeBronco;
 			sourceTree = "<group>";
@@ -268,9 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAC0A5A1F41176B0093BBBD /* Order_summary_ViewController.swift in Sources */,
+				5AAC0A561F4111160093BBBD /* Salad_Bar_ViewController.swift in Sources */,
 				6F2EBFF31EDAB2B9005BD4D1 /* ProfileViewController.swift in Sources */,
 				6F2EBFEF1EDAB2B9005BD4D1 /* AppDelegate.swift in Sources */,
+				5AAC0A541F40DB190093BBBD /* Mission_Bakery_ViewController.swift in Sources */,
 				6F2EBFF11EDAB2B9005BD4D1 /* RestaurantsViewController.swift in Sources */,
+				5AAC0A581F4111320093BBBD /* La_Parilla_ViewController.swift in Sources */,
 				6F4E4D581EDCC8A70097ECD5 /* MenuItemsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
