@@ -11,6 +11,7 @@
 		5AAC0A561F4111160093BBBD /* Salad_Bar_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */; };
 		5AAC0A581F4111320093BBBD /* La_Parilla_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */; };
 		5AAC0A5A1F41176B0093BBBD /* Order_summary_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */; };
+		6D7E21981F4A173F000BDE73 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7E21971F4A173F000BDE73 /* PassKit.framework */; };
 		6F2EBFEF1EDAB2B9005BD4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */; };
 		6F2EBFF11EDAB2B9005BD4D1 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */; };
 		6F2EBFF31EDAB2B9005BD4D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */; };
@@ -44,6 +45,8 @@
 		5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salad_Bar_ViewController.swift; sourceTree = "<group>"; };
 		5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = La_Parilla_ViewController.swift; sourceTree = "<group>"; };
 		5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order_summary_ViewController.swift; sourceTree = "<group>"; };
+		6D7E21951F4A1726000BDE73 /* Capstone_CafeBronco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capstone_CafeBronco.entitlements; sourceTree = "<group>"; };
+		6D7E21971F4A173F000BDE73 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		6F2EBFEB1EDAB2B9005BD4D1 /* Capstone_CafeBronco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone_CafeBronco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7E21981F4A173F000BDE73 /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7E21961F4A173F000BDE73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7E21971F4A173F000BDE73 /* PassKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F2EBFE21EDAB2B9005BD4D1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 				6F2EC0041EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests */,
 				6F2EC00F1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests */,
 				6F2EBFEC1EDAB2B9005BD4D1 /* Products */,
+				6D7E21961F4A173F000BDE73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +122,7 @@
 		6F2EBFED1EDAB2B9005BD4D1 /* Capstone_CafeBronco */ = {
 			isa = PBXGroup;
 			children = (
+				6D7E21951F4A1726000BDE73 /* Capstone_CafeBronco.entitlements */,
 				6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */,
 				6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */,
 				6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */,
@@ -213,6 +227,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PR7Q4AKF7U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 1;
+							};
+						};
 					};
 					6F2EC0001EDAB2B9005BD4D1 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -437,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Capstone_CafeBronco/Capstone_CafeBronco.entitlements;
 				DEVELOPMENT_TEAM = PR7Q4AKF7U;
 				INFOPLIST_FILE = Capstone_CafeBronco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Capstone_CafeBronco/Capstone_CafeBronco.entitlements;
 				DEVELOPMENT_TEAM = PR7Q4AKF7U;
 				INFOPLIST_FILE = Capstone_CafeBronco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
